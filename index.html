@@ -4,223 +4,312 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Luz para Cada Dia — 365 Cards Bíblicos para Imprimir</title>
-<meta name="description" content="365 cards com um versículo cada, prontos para imprimir e recortar. Um card por manhã, o ano inteiro. Material digital, acesso imediato, pagamento único de R$ 27.">
+<meta name="description" content="365 cards com um versículo cada, prontos para imprimir e recortar. Um card por manhã, o ano inteiro. Material digital, acesso imediato, pagamento único.">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#566B3F">
+<meta name="theme-color" content="#2FB85A">
 <link rel="canonical" href="https://luzparacadadia.com.br/">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Luz para Cada Dia">
 <meta property="og:title" content="Luz para Cada Dia — 365 Cards Bíblicos para Imprimir">
-<meta property="og:description" content="Você não perdeu a fé. Perdeu a constância. 365 cards com um versículo cada, prontos para imprimir. Um por manhã, o ano inteiro.">
+<meta property="og:description" content="Você não perdeu a fé. Perdeu a constância. 365 cards com um versículo cada, prontos para imprimir.">
 <meta property="og:url" content="https://luzparacadadia.com.br/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Luz para Cada Dia — 365 Cards Bíblicos para Imprimir">
-<meta name="twitter:description" content="365 cards com um versículo cada, prontos para imprimir. Um por manhã, o ano inteiro.">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23566B3F'/%3E%3Cpath d='M16 7v18M10 12h12' stroke='%23F7F6F2' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Palanquin:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23C89425'/%3E%3Cpath d='M16 7v18M10 12h12' stroke='%23FFF8E7' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
 
 <style>
   :root{
-    --paper:#F7F6F2;
-    --surface:#FFFFFF;
-    --ink:#1B2536;
-    --ink-soft:#6A7284;
-    --olive:#566B3F;
-    --olive-lift:#6E8551;
-    --rule:#D8D5CC;
-    --ground:#EFEDE6;
-    --gold:#9A7B34;
-    --shadow:14 21 34;
-    --radius:3px;
-    --display:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
-    --body:ui-sans-serif,-apple-system,"Segoe UI Variable Text","Segoe UI",Roboto,"Helvetica Neue",sans-serif;
-    --mono:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,monospace;
-  }
-  @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"]){
-      --paper:#141A24;--surface:#1B2330;--ink:#E9E7E0;--ink-soft:#98A0B0;
-      --olive:#93A87A;--olive-lift:#A8BC8E;--rule:#2C3644;--ground:#101620;
-      --gold:#C9A961;--shadow:0 0 0;
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#141A24;--surface:#1B2330;--ink:#E9E7E0;--ink-soft:#98A0B0;
-    --olive:#93A87A;--olive-lift:#A8BC8E;--rule:#2C3644;--ground:#101620;
-    --gold:#C9A961;--shadow:0 0 0;
+    --bg-top:#FFFCF5;
+    --bg-bottom:#F7F1E6;
+    --ink:#333333;
+    --ink-strong:#241B12;
+    --ink-mid:#5E5143;
+    --ink-soft:#5F5F5F;
+    --gold:#C89425;
+    --gold-deep:#8A6208;
+    --cream:#FFF4C7;
+    --card-a:rgba(255,248,231,.96);
+    --card-b:rgba(255,241,204,.88);
+    --card-shadow:0 10px 28px rgba(70,45,16,.08);
+    --green:#2FB85A;
+    --green-dark:#25994A;
+    --green-price:#009622;
+    --serif:"Fraunces",Georgia,"Times New Roman",serif;
+    --sans:"Palanquin",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
 
   *,*::before,*::after{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
-    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;overflow-x:hidden}
-  h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;letter-spacing:-.01em}
+  body{
+    margin:0;
+    background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg-bottom) 100%);
+    background-attachment:fixed;
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:var(--serif);color:var(--ink-strong);margin:0;
+    line-height:1.16;text-wrap:balance;font-weight:600}
   p{margin:0}
+  img{max-width:100%;height:auto;display:block}
   a{color:inherit}
-  img{max-width:100%;height:auto}
 
-  .wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
-  .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
-    text-transform:uppercase;color:var(--ink-soft)}
-  section{padding-block:clamp(3.5rem,7vw,6rem);border-top:1px solid var(--rule)}
-  section:first-of-type{border-top:0}
-  .sec-head{max-width:60ch;margin-bottom:clamp(2rem,4vw,3rem)}
-  .sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-block:.75rem .8rem;line-height:1.12}
-  .sec-head p{color:var(--ink-soft)}
+  .wrap{width:min(1140px,100% - 2.2rem);margin-inline:auto}
+  .narrow{max-width:760px;margin-inline:auto}
+  section{padding-block:clamp(2.6rem,6vw,3.5rem)}
+  .center{text-align:center}
 
-  .sheet{position:relative}
-  .sheet::before,.sheet::after{content:"";position:absolute;width:14px;height:14px;
-    pointer-events:none;border-color:var(--rule);border-style:solid}
-  .sheet::before{top:0;left:0;border-width:1px 0 0 1px}
-  .sheet::after{bottom:0;right:0;border-width:0 1px 1px 0}
+  h1{font-size:clamp(1.95rem,4.6vw,2.5rem)}
+  h2{font-size:clamp(1.75rem,4.2vw,2.6rem)}
+  .sec-title{text-align:center;margin-bottom:.7rem}
+  .sec-sub{text-align:center;color:var(--ink-soft);max-width:60ch;
+    margin:0 auto clamp(1.8rem,4vw,2.6rem)}
 
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
-    background:var(--olive);color:var(--paper);padding:1rem 1.8rem;border-radius:var(--radius);
-    border:1px solid var(--olive);font:inherit;font-weight:600;text-decoration:none;cursor:pointer;
-    transition:background .18s ease,transform .18s ease;text-align:center}
-  .btn:hover{background:var(--olive-lift);border-color:var(--olive-lift);transform:translateY(-1px)}
-  .btn-lg{width:100%;padding:1.2rem 1.8rem;font-size:1.05rem}
-  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--rule);font-weight:500}
-  .btn-ghost:hover{background:var(--ground);border-color:var(--ink-soft);color:var(--ink)}
-  :where(a,button,summary):focus-visible{outline:2px solid var(--olive);outline-offset:3px}
+  /* ---------- barra de avaliações ---------- */
+  .barra-avaliacoes{
+    display:inline-flex;align-items:center;gap:.55rem;
+    background:#E8F0FE;padding:10px 18px;border-radius:999px;
+    font-size:.86rem;color:var(--ink-mid);margin-bottom:1.4rem;
+  }
+  .barra-avaliacoes .stars{color:var(--gold);letter-spacing:.08em;font-size:.95rem}
 
-  .seals{display:flex;gap:1.3rem;flex-wrap:wrap;justify-content:center;
-    font-size:.8rem;color:var(--ink-soft);margin-top:1rem}
-  .seals span{display:flex;align-items:center;gap:.4rem}
-  .dot{width:5px;height:5px;border-radius:50%;background:var(--olive);flex:none}
+  /* ---------- botões ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+    background:var(--green);color:#fff;border:0;border-radius:10px;
+    padding:16px 26px;font-family:var(--sans);font-size:20px;font-weight:700;
+    text-decoration:none;cursor:pointer;line-height:1.25;
+    box-shadow:0 8px 20px rgba(47,184,90,.28);
+    transition:background .18s ease,transform .18s ease;
+    max-width:446px;width:100%;text-align:center;
+  }
+  .btn:hover{background:var(--green-dark);transform:translateY(-2px)}
+  .btn:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .btn-wrap{display:flex;justify-content:center;margin-top:1.6rem}
 
-  .rating{display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:var(--ink-soft);flex-wrap:wrap}
-  .stars{color:var(--gold);letter-spacing:.12em;font-size:.9rem}
+  .microcopy{text-align:center;font-size:.84rem;color:var(--ink-soft);margin-top:.85rem}
 
-  .hero{padding-top:clamp(2.5rem,5vw,4rem)}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
-  .hero h1{font-size:clamp(2.3rem,5vw,3.8rem);line-height:1.05;margin-block:1rem .9rem}
-  .hero h1 em{font-style:normal;color:var(--olive)}
-  .lede{font-size:1.1rem;color:var(--ink-soft);max-width:47ch}
-  .hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
-  .hero .seals{justify-content:flex-start;margin-top:1.5rem}
+  /* ---------- hero ---------- */
+  .hero{padding-top:clamp(1.6rem,4vw,2.4rem);text-align:center}
+  .hero h1{max-width:22ch;margin-inline:auto}
+  .hero .sub{max-width:62ch;margin:1.1rem auto 0;color:var(--ink-mid);font-size:1.08rem}
 
-  .sheet-preview{background:var(--surface);border:1px solid var(--rule);padding:1.1rem;
-    box-shadow:0 22px 45px -30px rgb(var(--shadow) / .55)}
-  .sheet-head{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.6rem;
-    letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
-    padding-bottom:.7rem;border-bottom:1px solid var(--rule);margin-bottom:.9rem}
-  .grid9{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem}
-  .mini{border:1px solid var(--rule);padding:.75rem .6rem;display:flex;flex-direction:column;
-    justify-content:space-between;min-height:104px;text-align:center;background:var(--paper)}
-  .mini b{font-family:var(--mono);font-size:.56rem;color:var(--olive);letter-spacing:.1em;
-    font-weight:500;font-variant-numeric:tabular-nums}
-  .mini q{font-family:var(--display);font-size:.82rem;line-height:1.3;quotes:none;display:block;margin:.4rem 0}
-  .mini i{font-style:normal;font-size:.58rem;color:var(--ink-soft)}
-
-  #diagnostico{background:var(--ground)}
-  .chain{display:grid;gap:.75rem;max-width:760px;margin:0}
-  .link{background:var(--paper);border:1px solid var(--rule);border-left:3px solid var(--rule);
-    padding:1.15rem 1.4rem;display:grid;grid-template-columns:150px 1fr;gap:1.2rem;align-items:baseline}
-  .link:last-child{border-left-color:var(--olive);background:var(--surface)}
-  .link dt{font-family:var(--mono);font-size:.65rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft)}
-  .link:last-child dt{color:var(--olive)}
-  .link dd{margin:0;font-size:.97rem}
-  .chain-note{margin-top:2rem;font-family:var(--display);font-size:1.25rem;max-width:52ch;line-height:1.45}
-
-  .deliver{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1px;
-    background:var(--rule);border:1px solid var(--rule)}
-  .item{background:var(--paper);padding:1.7rem 1.5rem;display:flex;flex-direction:column;gap:.55rem}
-  .item .num{font-family:var(--mono);font-size:.68rem;color:var(--olive);letter-spacing:.12em;
+  /* mockup do produto */
+  .mockup{margin:2.2rem auto 0;max-width:640px;position:relative;padding-bottom:1.5rem}
+  .mock-sheet{
+    background:#fff;border-radius:14px;padding:1.3rem;
+    box-shadow:0 24px 60px rgba(70,45,16,.16);
+    transform:rotate(-1.4deg);
+  }
+  .mock-head{display:flex;justify-content:space-between;font-size:.62rem;
+    letter-spacing:.14em;text-transform:uppercase;color:#A99B86;
+    padding-bottom:.7rem;border-bottom:1px solid #EDE6D8;margin-bottom:.9rem}
+  .grid9{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+  .mini{
+    border:1px solid #EDE6D8;border-radius:6px;padding:.8rem .55rem;
+    min-height:96px;display:flex;flex-direction:column;justify-content:center;
+    text-align:center;background:linear-gradient(180deg,#FFFDF8,#FFF9EC);
+  }
+  .mini b{font-size:.55rem;color:var(--gold);letter-spacing:.1em;font-weight:700;
     font-variant-numeric:tabular-nums}
-  .item h3{font-size:1.12rem}
-  .item p{font-size:.94rem;color:var(--ink-soft)}
+  .mini q{font-family:var(--serif);font-size:.8rem;line-height:1.28;quotes:none;
+    display:block;margin:.35rem 0;color:var(--ink-strong)}
+  .mini i{font-style:normal;font-size:.55rem;color:#9C9081}
+  .mock-float{
+    position:absolute;right:-8px;bottom:0;width:132px;
+    background:#fff;border-radius:10px;padding:1rem .8rem;text-align:center;
+    box-shadow:0 18px 40px rgba(70,45,16,.22);transform:rotate(5deg);
+    border:1px solid #F0E8D8;
+  }
+  .mock-float b{font-size:.55rem;color:var(--gold);letter-spacing:.1em}
+  .mock-float q{font-family:var(--serif);font-size:.9rem;line-height:1.25;quotes:none;
+    display:block;margin:.4rem 0 .3rem;color:var(--ink-strong)}
+  .mock-float i{font-style:normal;font-size:.55rem;color:#9C9081}
 
-  .anatomy{display:grid;grid-template-columns:minmax(230px,300px) 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
-  .anatomy ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1.4rem;counter-reset:a}
-  .anatomy li{display:grid;grid-template-columns:auto 1fr;gap:1.1rem;counter-increment:a}
-  .anatomy li::before{content:"0" counter(a);font-family:var(--mono);font-size:.72rem;color:var(--olive);
-    letter-spacing:.1em;padding-top:.35rem;font-variant-numeric:tabular-nums}
-  .anatomy h3{font-size:1.05rem;margin-bottom:.2rem}
-  .anatomy p{font-size:.93rem;color:var(--ink-soft)}
-  .anatomy .card{aspect-ratio:5/7;box-shadow:none;border:0;padding:1.5rem .5rem}
+  /* ---------- cadeia de diagnóstico ---------- */
+  .path-intro{font-family:var(--serif);font-size:clamp(1.5rem,3.4vw,2.5rem);
+    text-align:center;max-width:24ch;margin:0 auto 1rem;color:var(--ink-strong)}
+  .path-lead{text-align:center;max-width:62ch;margin:0 auto clamp(2rem,4vw,2.8rem);color:var(--ink-soft)}
+  .path{display:flex;flex-direction:column;align-items:center;gap:0;max-width:560px;margin-inline:auto}
+  .path-row{display:flex;align-items:center;gap:1rem;width:100%}
+  .novena-icon{
+    width:64px;height:64px;flex:none;border-radius:50%;
+    background:linear-gradient(145deg,#FFFFFF 0%,#FFF2CC 100%);
+    box-shadow:0 8px 22px rgba(84,55,13,.1),inset 0 1px 0 rgba(255,255,255,.65);
+    display:grid;place-items:center;font-size:27px;
+  }
+  .novena-card{
+    flex:1;background:linear-gradient(180deg,var(--card-a),var(--card-b));
+    border-radius:18px;padding:17px 18px;box-shadow:var(--card-shadow);
+  }
+  .novena-card strong{display:block;font-size:.7rem;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:.25rem}
+  .novena-card span{font-size:.95rem;color:var(--ink)}
+  .path-arrow{color:var(--gold);font-size:1.2rem;line-height:1;padding:.45rem 0 .45rem 88px;
+    align-self:flex-start}
+  .path-final .novena-card{background:linear-gradient(180deg,#FFF6DC,#FFEEBE);
+    box-shadow:0 12px 32px rgba(70,45,16,.14)}
+  .path-final .novena-card strong{color:var(--green-price)}
+  .path-note{font-family:var(--serif);font-size:clamp(1.15rem,2.6vw,1.45rem);
+    text-align:center;max-width:34ch;margin:2.4rem auto 0;color:var(--ink-strong);line-height:1.4}
 
-  .uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;
-    background:var(--rule);border:1px solid var(--rule)}
-  .use{background:var(--paper);padding:1.5rem;display:flex;flex-direction:column;gap:.4rem}
-  .use span{font-family:var(--mono);font-size:.65rem;color:var(--ink-soft);letter-spacing:.12em}
-  .use h3{font-size:1rem}
-  .use p{font-size:.9rem;color:var(--ink-soft)}
+  /* ---------- benefícios ---------- */
+  .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1.1rem}
+  .benefit{
+    background:linear-gradient(180deg,var(--card-a),var(--card-b));
+    border-radius:18px;padding:1.7rem 1.5rem;box-shadow:var(--card-shadow);text-align:center;
+  }
+  .benefit .novena-icon{margin:0 auto .95rem}
+  .benefit h3{font-size:1.15rem;margin-bottom:.5rem}
+  .benefit p{font-size:.94rem;color:var(--ink-soft)}
 
-  .car-top{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap}
-  .car-nav{display:flex;gap:.5rem}
-  .arrow{width:44px;height:44px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);
-    border-radius:var(--radius);cursor:pointer;font-size:1rem;line-height:1;display:grid;place-items:center;
-    transition:border-color .18s ease,background .18s ease}
-  .arrow:hover{border-color:var(--olive);background:var(--ground)}
-  .rail{display:flex;gap:1.1rem;overflow-x:auto;scroll-snap-type:x mandatory;
-    padding:2rem .2rem 1.2rem;margin-inline:-.2rem;
-    scrollbar-width:thin;scrollbar-color:var(--rule) transparent}
-  .card{flex:0 0 clamp(230px,26vw,272px);scroll-snap-align:center;aspect-ratio:5/7;
-    background:var(--surface);border:1px solid var(--rule);padding:1.5rem 1.25rem;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.85rem;
-    box-shadow:0 16px 34px -26px rgb(var(--shadow) / .5);
-    transition:transform .3s ease,border-color .3s ease}
-  .card:hover{transform:translateY(-5px);border-color:var(--olive)}
-  .card .id{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;color:var(--olive);
+  /* ---------- carrossel ---------- */
+  .rail{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
+    padding:.6rem .2rem 1.4rem;scrollbar-width:thin;scrollbar-color:#E0D5BF transparent}
+  .vcard{
+    flex:0 0 clamp(212px,24vw,244px);scroll-snap-align:center;aspect-ratio:5/7;
+    background:#fff;border-radius:14px;border:1px solid #F0E8D8;
+    padding:1.4rem 1.1rem;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;text-align:center;gap:.7rem;
+    box-shadow:0 12px 30px rgba(70,45,16,.1);
+    transition:transform .3s ease,box-shadow .3s ease;
+  }
+  .vcard:hover{transform:translateY(-6px);box-shadow:0 20px 42px rgba(70,45,16,.16)}
+  .vcard .id{font-size:.62rem;letter-spacing:.16em;color:var(--gold);font-weight:700;
     font-variant-numeric:tabular-nums}
-  .card q{font-family:var(--display);font-size:1.28rem;line-height:1.32;quotes:none}
-  .card .ref{font-size:.76rem;letter-spacing:.05em;color:var(--ink-soft);text-transform:uppercase}
-  .card .flourish{width:34px;height:1px;background:var(--rule)}
+  .vcard .fl{width:32px;height:1px;background:#E8DCC4}
+  .vcard q{font-family:var(--serif);font-size:1.16rem;line-height:1.32;quotes:none;color:var(--ink-strong)}
+  .vcard .ref{font-size:.72rem;letter-spacing:.05em;color:#9C9081;text-transform:uppercase}
+  .car-nav{display:flex;gap:.5rem;justify-content:center;margin-top:.2rem}
+  .arrow{width:44px;height:44px;border:1px solid #EADFC8;background:#fff;color:var(--ink-strong);
+    border-radius:50%;cursor:pointer;font-size:1.05rem;display:grid;place-items:center;
+    box-shadow:0 6px 16px rgba(70,45,16,.08);transition:background .18s ease}
+  .arrow:hover{background:#FFF6DC}
 
-  #ofertas{background:var(--ground)}
-  .offer{max-width:620px;margin-inline:auto;background:var(--paper);border:1px solid var(--olive);
-    border-radius:var(--radius);padding:clamp(1.8rem,4vw,2.6rem);
-    box-shadow:0 30px 60px -40px rgb(var(--shadow) / .6)}
-  .lot{margin-bottom:1.8rem}
-  .lot-bar{height:6px;background:var(--rule);border-radius:99px;overflow:hidden;margin-block:.7rem .5rem}
-  .lot-fill{height:100%;width:83%;background:var(--olive)}
-  .lot-meta{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.68rem;
-    letter-spacing:.08em;color:var(--ink-soft);font-variant-numeric:tabular-nums}
-  .checklist{list-style:none;margin:0 0 1.8rem;padding:0;display:flex;flex-direction:column;gap:.7rem}
-  .checklist li{display:grid;grid-template-columns:auto 1fr;gap:.75rem;font-size:.96rem;align-items:baseline}
-  .checklist li::before{content:"\2713";color:var(--olive);font-weight:700;font-size:.9rem}
-  .checklist b{font-weight:600}
-  .checklist .bonus{color:var(--ink-soft)}
-  .checklist .bonus b{color:var(--ink)}
-  .pricing{text-align:center;padding-block:1.6rem;border-block:1px solid var(--rule);margin-bottom:1.6rem}
-  .was{font-family:var(--mono);font-size:.85rem;color:var(--ink-soft)}
-  .was s{text-decoration-thickness:1px}
-  .now{font-family:var(--mono);font-size:clamp(2.8rem,7vw,3.6rem);font-weight:600;
-    line-height:1.05;letter-spacing:-.03em;display:block;margin-block:.2rem}
-  .once{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+  /* ---------- como funciona ---------- */
+  .steps{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:1rem;align-items:center}
+  .step{text-align:center}
+  .step .novena-icon{margin:0 auto .9rem}
+  .step h3{font-size:1.05rem;margin-bottom:.35rem}
+  .step p{font-size:.92rem;color:var(--ink-soft)}
+  .step-arrow{color:var(--gold);font-size:1.4rem}
 
-  .guarantee{max-width:620px;margin:2rem auto 0;border:1px dashed var(--rule);border-radius:var(--radius);
-    padding:1.5rem 1.7rem;background:var(--paper)}
-  .guarantee h3{font-size:1.1rem;margin-bottom:.55rem}
-  .guarantee p{font-size:.93rem;color:var(--ink-soft)}
+  /* ---------- temas (grade 9) ---------- */
+  .themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1.1rem}
+  .theme{
+    background:linear-gradient(180deg,var(--card-a),var(--card-b));
+    border-radius:18px;padding:1.5rem 1.4rem;box-shadow:var(--card-shadow);
+  }
+  .theme .ico{font-size:1.7rem;line-height:1;margin-bottom:.6rem}
+  .theme h3{font-size:1.05rem;margin-bottom:.35rem}
+  .theme p{font-size:.9rem;color:var(--ink-soft)}
 
-  .faq{display:flex;flex-direction:column;border-top:1px solid var(--rule);max-width:820px}
-  details{border-bottom:1px solid var(--rule)}
-  summary{cursor:pointer;list-style:none;padding:1.25rem 2.5rem 1.25rem 0;position:relative;
-    font-family:var(--display);font-size:1.06rem;font-weight:600}
+  /* ---------- diferencial ---------- */
+  .diff-title{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.5rem);
+    text-align:center;max-width:20ch;margin:0 auto 1rem;color:var(--ink-strong)}
+  .includes{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:2rem}
+  .inc{
+    display:inline-flex;align-items:center;gap:.5rem;
+    background:#fff;border:1px solid #F0E4CB;border-radius:999px;
+    padding:.6rem 1.15rem;font-size:.92rem;box-shadow:0 4px 14px rgba(70,45,16,.06);
+  }
+  .inc::before{content:"\2713";color:var(--green-price);font-weight:700}
+  .verse-quote{
+    text-align:center;max-width:52ch;margin:2.6rem auto 0;
+    font-family:var(--serif);font-size:1.35rem;line-height:1.45;color:var(--ink-strong);
+  }
+  .verse-quote cite{display:block;font-style:normal;font-size:.85rem;
+    color:var(--ink-soft);margin-top:.7rem;font-family:var(--sans)}
+
+  /* ---------- oferta ---------- */
+  .offer-band{
+    background:linear-gradient(180deg,#FFF6DC 0%,#FFEFC4 100%);
+    border-radius:22px;padding:clamp(1.7rem,4vw,2.6rem);
+    box-shadow:0 20px 50px rgba(70,45,16,.13);max-width:760px;margin-inline:auto;
+  }
+  .lot-title{text-align:center;color:var(--ink-mid);font-size:.95rem;margin-bottom:1rem}
+  .lot-bar{height:9px;background:#EFE1BE;border-radius:99px;overflow:hidden;margin-bottom:.55rem}
+  .lot-fill{height:100%;width:83%;background:linear-gradient(90deg,var(--gold),#E0AE45)}
+  .lot-meta{display:flex;justify-content:space-between;font-size:.8rem;
+    color:var(--ink-mid);font-weight:600;font-variant-numeric:tabular-nums;margin-bottom:1.8rem}
+  .checklist{list-style:none;margin:0 0 1.8rem;padding:0;display:flex;flex-direction:column;gap:.75rem}
+  .checklist li{display:grid;grid-template-columns:auto 1fr;gap:.7rem;
+    font-size:1rem;align-items:baseline}
+  .checklist li::before{content:"\2705";font-size:.95rem}
+  .price-block{text-align:center;padding-block:1.4rem;
+    border-top:1px dashed #E4D2A6;border-bottom:1px dashed #E4D2A6;margin-bottom:1.6rem}
+  .price-was{font-size:1rem;color:var(--ink-soft)}
+  .price-now{
+    font-family:var(--serif);color:var(--green-price);
+    font-size:clamp(2.9rem,8vw,3.5rem);font-weight:700;line-height:1.1;
+    display:block;margin-block:.15rem .3rem;
+  }
+  .price-terms{font-size:.85rem;color:var(--ink-mid)}
+
+  .guarantee{
+    max-width:760px;margin:2.2rem auto 0;background:#fff;border:1px solid #F0E4CB;
+    border-radius:18px;padding:1.7rem 1.8rem;box-shadow:0 10px 28px rgba(70,45,16,.07);
+    text-align:center;
+  }
+  .guarantee .novena-icon{margin:0 auto 1rem}
+  .guarantee h3{font-size:1.25rem;margin-bottom:.6rem}
+  .guarantee p{font-size:.96rem;color:var(--ink-soft);max-width:58ch;margin-inline:auto}
+
+  /* ---------- faq ---------- */
+  .faq{max-width:760px;margin-inline:auto;display:flex;flex-direction:column;gap:.7rem}
+  details{background:#fff;border:1px solid #F0E4CB;border-radius:14px;
+    box-shadow:0 4px 14px rgba(70,45,16,.05);overflow:hidden}
+  summary{cursor:pointer;list-style:none;padding:1.1rem 3rem 1.1rem 1.4rem;position:relative;
+    font-family:var(--serif);font-size:1.03rem;font-weight:600;color:var(--ink-strong)}
   summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";position:absolute;right:.4rem;top:50%;transform:translateY(-50%);
-    font-family:var(--mono);color:var(--olive);font-size:1.15rem}
+  summary::after{content:"+";position:absolute;right:1.3rem;top:50%;transform:translateY(-50%);
+    color:var(--gold);font-size:1.35rem;font-family:var(--sans);line-height:1}
   details[open] summary::after{content:"\2013"}
-  details p{padding:0 2.5rem 1.4rem 0;color:var(--ink-soft);font-size:.95rem;max-width:70ch}
+  details p{padding:0 1.4rem 1.3rem;color:var(--ink-soft);font-size:.95rem}
 
-  .close{text-align:center;max-width:620px;margin-inline:auto}
-  .close h2{font-size:clamp(1.8rem,3.6vw,2.5rem);margin-bottom:.9rem}
-  .close p{color:var(--ink-soft);margin-bottom:2rem}
+  /* ---------- barra fixa de urgência ---------- */
+  .mini-urgency{
+    position:fixed;left:0;right:0;bottom:0;z-index:900;
+    background:var(--ink-strong);color:#fff;
+    padding:.7rem 1rem;display:flex;align-items:center;justify-content:center;
+    gap:1rem;flex-wrap:wrap;font-size:.88rem;
+    box-shadow:0 -6px 24px rgba(36,27,18,.22);
+    transform:translateY(110%);transition:transform .3s ease;
+  }
+  .mini-urgency.show{transform:translateY(0)}
+  .mini-urgency strong{color:var(--cream);font-weight:800}
+  .mini-urgency a{
+    background:var(--green);color:#fff;text-decoration:none;font-weight:700;
+    padding:.6rem 1.3rem;border-radius:8px;font-size:.92rem;white-space:nowrap;
+  }
+  .mini-urgency a:hover{background:var(--green-dark)}
+  body{padding-bottom:0}
 
-  footer{padding-block:2.5rem;border-top:1px solid var(--rule);color:var(--ink-soft);font-size:.8rem}
-  .foot-in{display:flex;justify-content:space-between;gap:1.2rem;flex-wrap:wrap}
-  .legal{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--rule);
-    font-size:.76rem;max-width:75ch;line-height:1.55}
+  /* ---------- rodapé ---------- */
+  footer{background:var(--ink-strong);color:#C9BEAE;padding-block:2.4rem 6rem;font-size:.82rem;margin-top:2rem}
+  footer strong{color:var(--cream)}
+  .foot-top{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+    padding-bottom:1.3rem;border-bottom:1px solid #3D3329;margin-bottom:1.3rem}
+  .legal{max-width:78ch;line-height:1.6;font-size:.76rem}
 
-  @media (max-width:820px){
-    .hero-grid,.anatomy{grid-template-columns:1fr}
-    .sheet-preview{order:-1}
-    .link{grid-template-columns:1fr;gap:.35rem}
-    .anatomy .sheet-preview{max-width:320px}
+  @media (max-width:860px){
+    .steps{grid-template-columns:1fr;gap:1.6rem}
+    .step-arrow{display:none}
+  }
+  @media (max-width:600px){
+    .path-row{gap:.75rem}
+    .novena-icon{width:52px;height:52px;font-size:22px}
+    .path-arrow{padding-left:66px}
+    .mock-float{width:108px;right:-4px}
   }
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
@@ -234,31 +323,21 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="wrap sheet">
-    <div class="hero-grid">
-      <div>
-        <p class="rating">
-          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          <span>Coleção completa — Volumes I, II e III</span>
-        </p>
-        <h1>Você não perdeu a fé.<br>Perdeu a <em>constância</em>.</h1>
-        <p class="lede">Não é falta de vontade — é a rotina que engole o dia. Luz para Cada Dia entrega
-          365 cards com um versículo cada: você imprime uma vez, recorta e separa um card por manhã.
-          Sem app, sem plano de leitura para cumprir, sem culpa por ter atrasado.</p>
-        <div class="hero-cta">
-          <a class="btn" href="#ofertas">Quero os 365 cards</a>
-          <a class="btn btn-ghost" href="#dentro">Ver os cards por dentro</a>
-        </div>
-        <p class="seals">
-          <span><i class="dot"></i>Material digital</span>
-          <span><i class="dot"></i>Acesso imediato</span>
-          <span><i class="dot"></i>Pagamento único</span>
-          <span><i class="dot"></i>7 dias de garantia</span>
-        </p>
-      </div>
+  <div class="wrap">
+    <!-- SUBSTITUIR pelo número real de vendas quando houver. Enquanto não houver, mantenha sem número. -->
+    <p class="barra-avaliacoes">
+      <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span>Coleção completa &middot; Volumes I, II e III</span>
+    </p>
 
-      <div class="sheet-preview" aria-label="Prévia de uma folha de impressão com nove cards">
-        <div class="sheet-head"><span>Luz para Cada Dia</span><span>Folha 01 · frentes</span></div>
+    <h1>Quer voltar a ler a Palavra todo dia, mas o dia acaba e não aconteceu?</h1>
+    <p class="sub">Luz para Cada Dia é uma coleção de 365 cards para imprimir, com um versículo em cada um.
+      Você imprime uma vez, recorta e separa um card por manhã — sem app, sem plano de leitura para
+      cumprir e sem culpa por ter atrasado.</p>
+
+    <div class="mockup">
+      <div class="mock-sheet">
+        <div class="mock-head"><span>Luz para Cada Dia</span><span>Folha 01 &middot; frentes</span></div>
         <div class="grid9">
           <div class="mini"><b>001</b><q>O Senhor é a minha luz e a minha salvação.</q><i>Salmos 27:1</i></div>
           <div class="mini"><b>002</b><q>Posso todas as coisas naquele que me fortalece.</q><i>Filipenses 4:13</i></div>
@@ -271,141 +350,113 @@
           <div class="mini"><b>009</b><q>Provem e vejam como o Senhor é bom.</q><i>Salmos 34:8</i></div>
         </div>
       </div>
+      <div class="mock-float">
+        <b>052</b>
+        <q>Os que esperam no Senhor renovarão as forças.</q>
+        <i>Isaías 40:31</i>
+      </div>
     </div>
+
+    <div class="btn-wrap">
+      <a class="btn" href="#oferta" data-checkout>&#10013; QUERO MEUS 365 CARDS</a>
+    </div>
+    <p class="microcopy">Acesso imediato &middot; Produto digital &middot; 7 dias de garantia</p>
   </div>
 </section>
 
-<!-- ============ DIAGNÓSTICO ============ -->
-<section id="diagnostico">
+<!-- ============ CADEIA DE DIAGNÓSTICO ============ -->
+<section id="caminho">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Por que a leitura não acontece</p>
-      <h2>O problema quase nunca é falta de fé.</h2>
-      <p>É não saber por onde começar, não ter nada preparado e desistir na terceira manhã.
-        Veja se este caminho é o seu:</p>
-    </div>
+    <h2 class="path-intro">Muitas pessoas não deixam de ler a Bíblia por falta de fé.</h2>
+    <p class="path-lead">Elas param porque não sabem por onde começar. Luz para Cada Dia transforma
+      a vontade de ler em um caminho simples: um versículo já escolhido, esperando você todo dia.</p>
 
-    <dl class="chain">
-      <div class="link">
-        <dt>O que você sente</dt>
-        <dd>Cansaço · pressa · culpa por não ter aberto a Bíblia hoje de novo</dd>
-      </div>
-      <div class="link">
-        <dt>O que você procura</dt>
-        <dd>Um momento curto com Deus · uma palavra para o dia · direção</dd>
-      </div>
-      <div class="link">
-        <dt>O que te trava</dt>
-        <dd>Não saber onde ler · plano de leitura longo demais · começar e abandonar na primeira semana</dd>
-      </div>
-      <div class="link">
-        <dt>O que você precisa</dt>
-        <dd>Um versículo já escolhido, curto, na sua mão — sem depender de celular nem de disposição</dd>
-      </div>
-      <div class="link">
-        <dt>Luz para Cada Dia</dt>
-        <dd>365 cards prontos · um por manhã · você só estende a mão e lê</dd>
-      </div>
-    </dl>
-
-    <p class="chain-note">Você não precisa decidir nada todo dia. O dia já vem escolhido.</p>
-  </div>
-</section>
-
-<!-- ============ O QUE VOCÊ VAI RECEBER ============ -->
-<section id="receber">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">O que você vai receber</p>
-      <h2>Um ano inteiro de Palavra, pronto para imprimir hoje.</h2>
-      <p>Tudo chega em arquivo digital, no seu e-mail, minutos depois da compra. Você imprime em casa,
-        na papelaria da esquina — ou não imprime nada e lê pelo celular.</p>
-    </div>
-
-    <div class="deliver">
-      <div class="item">
-        <span class="num">365</span>
-        <h3>Cards de leitura diária</h3>
-        <p>Os três volumes reunidos: 108 cards do Volume I, 108 do Volume II e 149 do Volume III inédito.
-          Um versículo curto e a referência em cada card, sem repetir nenhum ao longo do ano.</p>
-      </div>
-      <div class="item">
-        <span class="num">41</span>
-        <h3>Folhas de impressão prontas</h3>
-        <p>Nove cards por folha, já diagramados com margem de corte. Nada de ajustar tamanho ou
-          posicionar imagem: é abrir o PDF e mandar imprimir.</p>
-      </div>
-      <div class="item">
-        <span class="num">V/F</span>
-        <h3>Verso combinando</h3>
-        <p>Folha de versos no mesmo padrão, para imprimir frente e verso e ter cards acabados dos dois
-          lados — com cara de produto comprado pronto, não de papel impresso em casa.</p>
-      </div>
-      <div class="item">
-        <span class="num">A4 · Carta</span>
-        <h3>Dois formatos de papel</h3>
-        <p>O mesmo material nos dois tamanhos, para impressora doméstica ou gráfica rápida,
-          sem cortar o conteúdo nas bordas.</p>
-      </div>
-      <div class="item">
-        <span class="num">Guia</span>
-        <h3>Guia de impressão e recorte</h3>
-        <p>Que gramatura de papel comprar, qual configuração usar na impressora e como recortar reto
-          sem estilete — em uma página só, direto ao ponto.</p>
-      </div>
-      <div class="item">
-        <span class="num">&#8734;</span>
-        <h3>Acesso vitalício</h3>
-        <p>Baixe quantas vezes quiser e imprima quantas coleções quiser: para você, para presentear,
-          para o grupo de oração ou para a sala da igreja.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ANATOMIA DO CARD ============ -->
-<section id="anatomia">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Um card por dentro</p>
-      <h2>Curto o bastante para você guardar de verdade.</h2>
-      <p>Cada card cabe na palma da mão e leva menos de um minuto para ler — que é exatamente o
-        motivo pelo qual você consegue manter todos os dias.</p>
-    </div>
-
-    <div class="anatomy">
-      <div class="sheet-preview">
-        <div class="sheet-head"><span>Card 052</span><span>Volume I</span></div>
-        <div class="card">
-          <span class="id">052</span>
-          <span class="flourish"></span>
-          <q>Os que esperam no Senhor renovarão as forças.</q>
-          <span class="ref">Isaías 40:31</span>
+    <div class="path">
+      <div class="path-row">
+        <div class="novena-icon" aria-hidden="true">&#128533;</div>
+        <div class="novena-card">
+          <strong>O que você sente</strong>
+          <span>cansaço &middot; pressa &middot; culpa por não ter aberto a Bíblia hoje de novo</span>
         </div>
       </div>
-      <ol>
-        <li>
-          <div>
-            <h3>Numeração do dia</h3>
-            <p>De 001 a 365. Você sabe exatamente onde parou, mesmo se pular um dia — é só seguir
-              do próximo número, sem sensação de dívida acumulada.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>O versículo, sozinho</h3>
-            <p>Sem comentário, sem devocional de meia página. Só a Palavra, em tipografia grande,
-              para você ler, repetir durante o dia e realmente memorizar.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>A referência completa</h3>
-            <p>Livro, capítulo e versículo impressos no card, para você abrir a Bíblia e ler o
-              contexto sempre que aquele versículo tocar mais fundo.</p>
-          </div>
-        </li>
-      </ol>
+      <div class="path-arrow" aria-hidden="true">&#8595;</div>
+
+      <div class="path-row">
+        <div class="novena-icon" aria-hidden="true">&#128591;</div>
+        <div class="novena-card">
+          <strong>O que você procura</strong>
+          <span>um momento curto com Deus &middot; uma palavra para o dia &middot; direção</span>
+        </div>
+      </div>
+      <div class="path-arrow" aria-hidden="true">&#8595;</div>
+
+      <div class="path-row">
+        <div class="novena-icon" aria-hidden="true">&#128257;</div>
+        <div class="novena-card">
+          <strong>O que te trava</strong>
+          <span>não saber onde ler &middot; plano de leitura longo demais &middot; começar e abandonar na primeira semana</span>
+        </div>
+      </div>
+      <div class="path-arrow" aria-hidden="true">&#8595;</div>
+
+      <div class="path-row">
+        <div class="novena-icon" aria-hidden="true">&#128367;&#65039;</div>
+        <div class="novena-card">
+          <strong>O que você precisa</strong>
+          <span>um versículo curto, já escolhido, na sua mão — sem depender de celular nem de disposição</span>
+        </div>
+      </div>
+      <div class="path-arrow" aria-hidden="true">&#8595;</div>
+
+      <div class="path-row path-final">
+        <div class="novena-icon" aria-hidden="true">&#10024;</div>
+        <div class="novena-card">
+          <strong>O caminho Luz para Cada Dia</strong>
+          <span>365 cards prontos &middot; um por manhã &middot; você só estende a mão e lê</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="path-note">Você não precisa decidir nada todo dia. O dia já vem escolhido.</p>
+
+    <div class="btn-wrap">
+      <a class="btn" href="#oferta" data-checkout>&#10013; QUERO COMEÇAR HOJE</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFÍCIOS ============ -->
+<section id="beneficios">
+  <div class="wrap">
+    <h2 class="sec-title">Tudo que esta coleção vai te ajudar a viver:</h2>
+    <p class="sec-sub">Um material feito para transformar a correria dos dias em um encontro curto,
+      constante e possível com a Palavra.</p>
+
+    <div class="benefits">
+      <div class="benefit">
+        <div class="novena-icon" aria-hidden="true">&#128330;</div>
+        <h3>Constância de verdade</h3>
+        <p>Um card por manhã, menos de um minuto. Curto o bastante para você conseguir manter
+          mesmo nos dias corridos.</p>
+      </div>
+      <div class="benefit">
+        <div class="novena-icon" aria-hidden="true">&#128214;</div>
+        <h3>Nada para escolher</h3>
+        <p>Os 365 versículos já vêm selecionados e numerados. Você não perde tempo decidindo
+          o que ler — só lê.</p>
+      </div>
+      <div class="benefit">
+        <div class="novena-icon" aria-hidden="true">&#129717;</div>
+        <h3>Palavra guardada no coração</h3>
+        <p>Versículos curtos são os que ficam. Você lê de manhã, repete durante o dia e
+          leva com você sem precisar do celular.</p>
+      </div>
+      <div class="benefit">
+        <div class="novena-icon" aria-hidden="true">&#127873;</div>
+        <h3>Fé que se compartilha</h3>
+        <p>Imprima quantas vezes quiser: para a família, para presentear, para o grupo de
+          oração ou para a sala da igreja.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -413,98 +464,170 @@
 <!-- ============ CARROSSEL ============ -->
 <section id="dentro">
   <div class="wrap">
-    <div class="car-top">
-      <div class="sec-head" style="margin-bottom:0">
-        <p class="eyebrow">Por dentro da coleção</p>
-        <h2>Alguns dos 365 cards.</h2>
-        <p>Arraste para o lado e veja como cada dia chega até você.</p>
-      </div>
-      <div class="car-nav">
-        <button class="arrow" id="prev" type="button" aria-label="Card anterior">&#8592;</button>
-        <button class="arrow" id="next" type="button" aria-label="Próximo card">&#8594;</button>
-      </div>
-    </div>
+    <h2 class="sec-title">Veja alguns dos cards que você vai receber</h2>
+    <p class="sec-sub">São 365 cards para imprimir, recortar e usar um a cada dia do ano.
+      Arraste para o lado.</p>
 
     <div class="rail" id="rail" tabindex="0" role="group" aria-label="Carrossel de cards">
-      <article class="card"><span class="id">001 · Vol. I</span><span class="flourish"></span><q>O Senhor é a minha luz e a minha salvação.</q><span class="ref">Salmos 27:1</span></article>
-      <article class="card"><span class="id">013 · Vol. I</span><span class="flourish"></span><q>O Senhor pelejará por vós.</q><span class="ref">Êxodo 14:14</span></article>
-      <article class="card"><span class="id">052 · Vol. I</span><span class="flourish"></span><q>Os que esperam no Senhor renovarão as forças.</q><span class="ref">Isaías 40:31</span></article>
-      <article class="card"><span class="id">075 · Vol. I</span><span class="flourish"></span><q>Em paz me deitarei e dormirei.</q><span class="ref">Salmos 4:8</span></article>
-      <article class="card"><span class="id">002 · Vol. II</span><span class="flourish"></span><q>Eu sou a luz do mundo.</q><span class="ref">João 8:12</span></article>
-      <article class="card"><span class="id">004 · Vol. II</span><span class="flourish"></span><q>Todas as coisas cooperam para o bem.</q><span class="ref">Romanos 8:28</span></article>
-      <article class="card"><span class="id">043 · Vol. II</span><span class="flourish"></span><q>Aquietai-vos e sabei que eu sou Deus.</q><span class="ref">Salmos 46:10</span></article>
-      <article class="card"><span class="id">089 · Vol. II</span><span class="flourish"></span><q>Deus é amor.</q><span class="ref">1 João 4:8</span></article>
-      <article class="card"><span class="id">095 · Vol. II</span><span class="flourish"></span><q>Tu és o meu esconderijo.</q><span class="ref">Salmos 32:7</span></article>
-      <article class="card"><span class="id">107 · Vol. II</span><span class="flourish"></span><q>A vereda dos justos é como a luz da aurora.</q><span class="ref">Provérbios 4:18</span></article>
+      <article class="vcard"><span class="id">001</span><span class="fl"></span><q>O Senhor é a minha luz e a minha salvação.</q><span class="ref">Salmos 27:1</span></article>
+      <article class="vcard"><span class="id">013</span><span class="fl"></span><q>O Senhor pelejará por vós.</q><span class="ref">Êxodo 14:14</span></article>
+      <article class="vcard"><span class="id">052</span><span class="fl"></span><q>Os que esperam no Senhor renovarão as forças.</q><span class="ref">Isaías 40:31</span></article>
+      <article class="vcard"><span class="id">075</span><span class="fl"></span><q>Em paz me deitarei e dormirei.</q><span class="ref">Salmos 4:8</span></article>
+      <article class="vcard"><span class="id">116</span><span class="fl"></span><q>Eu sou a luz do mundo.</q><span class="ref">João 8:12</span></article>
+      <article class="vcard"><span class="id">118</span><span class="fl"></span><q>Todas as coisas cooperam para o bem.</q><span class="ref">Romanos 8:28</span></article>
+      <article class="vcard"><span class="id">157</span><span class="fl"></span><q>Aquietai-vos e sabei que eu sou Deus.</q><span class="ref">Salmos 46:10</span></article>
+      <article class="vcard"><span class="id">203</span><span class="fl"></span><q>Deus é amor.</q><span class="ref">1 João 4:8</span></article>
+      <article class="vcard"><span class="id">209</span><span class="fl"></span><q>Tu és o meu esconderijo.</q><span class="ref">Salmos 32:7</span></article>
+      <article class="vcard"><span class="id">221</span><span class="fl"></span><q>A vereda dos justos é como a luz da aurora.</q><span class="ref">Provérbios 4:18</span></article>
+    </div>
+
+    <div class="car-nav">
+      <button class="arrow" id="prev" type="button" aria-label="Card anterior">&#8592;</button>
+      <button class="arrow" id="next" type="button" aria-label="Próximo card">&#8594;</button>
+    </div>
+
+    <div class="btn-wrap">
+      <a class="btn" href="#oferta" data-checkout>&#10013; QUERO TER ACESSO AOS CARDS</a>
     </div>
   </div>
 </section>
 
-<!-- ============ USOS ============ -->
-<section id="usos">
+<!-- ============ COMO FUNCIONA ============ -->
+<section id="como-funciona">
+  <div class="wrap narrow">
+    <h2 class="sec-title">Como funciona na prática?</h2>
+    <p class="sec-sub">Você faz uma vez só. Depois é só estender a mão todas as manhãs.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="novena-icon" aria-hidden="true">&#128424;&#65039;</div>
+        <h3>Você imprime</h3>
+        <p>Abre o PDF e manda imprimir — em casa ou na papelaria. As folhas já vêm prontas.</p>
+      </div>
+      <div class="step-arrow" aria-hidden="true">&#8594;</div>
+      <div class="step">
+        <div class="novena-icon" aria-hidden="true">&#9986;&#65039;</div>
+        <h3>Você recorta</h3>
+        <p>Nove cards por folha, com margem de corte marcada. Uma tarde de trabalho, um ano de uso.</p>
+      </div>
+      <div class="step-arrow" aria-hidden="true">&#8594;</div>
+      <div class="step">
+        <div class="novena-icon" aria-hidden="true">&#127774;</div>
+        <h3>Deus conduz o dia</h3>
+        <p>Um card por manhã, do 001 ao 365. A Palavra já escolhida, esperando por você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEMAS ============ -->
+<section id="temas">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Muitos usos, um só material</p>
-      <h2>Você imprime uma vez e usa o ano inteiro.</h2>
-    </div>
+    <h2 class="sec-title">Versículos para os dias em que<br>a vida pesa no coração</h2>
+    <p class="sec-sub">Os 365 cards cobrem o que você realmente atravessa ao longo de um ano.</p>
 
-    <div class="uses">
-      <div class="use"><span>01</span><h3>Devocional da manhã</h3><p>Um card no café, antes de a casa acordar. Menos de um minuto, todo dia.</p></div>
-      <div class="use"><span>02</span><h3>Card do dia na geladeira</h3><p>Prenda com um ímã e a família inteira lê o versículo sem precisar ser lembrada.</p></div>
-      <div class="use"><span>03</span><h3>Marcador de Bíblia</h3><p>O card vira o marcador da página em que você parou — Palavra dentro da Palavra.</p></div>
-      <div class="use"><span>04</span><h3>Bilhete na lancheira</h3><p>Um versículo curto na mochila do filho, no jaleco do marido, na bolsa da mãe.</p></div>
-      <div class="use"><span>05</span><h3>Grupo de oração</h3><p>Cada pessoa tira um card e lê em voz alta — abre o encontro sem ninguém preparar nada.</p></div>
-      <div class="use"><span>06</span><h3>Presente pequeno</h3><p>Um punhado de cards com fitilho vira lembrança de batizado, visita ou aniversário.</p></div>
+    <div class="themes">
+      <div class="theme"><div class="ico" aria-hidden="true">&#128514;</div><h3>Ansiedade e medo</h3><p>Para as noites sem sono e os dias em que o peito aperta sem motivo aparente.</p></div>
+      <div class="theme"><div class="ico" aria-hidden="true">&#128176;</div><h3>Provisão e sustento</h3><p>Para o aperto no orçamento, a conta que chegou e a promessa de que nada faltará.</p></div>
+      <div class="theme"><div class="ico" aria-hidden="true">&#128147;</div><h3>Cura e consolo</h3><p>Para a dor que ninguém vê, o luto recente e o coração quebrantado.</p></div>
+      <div class="theme"><div class="ico" aria-hidden="true">&#128170;</div><h3>Força e coragem</h3><p>Para as decisões difíceis, o recomeço e os dias em que faltam forças.</p></div>
+      <div class="theme"><div class="ico" aria-hidden="true">&#128106;</div><h3>Família e relacionamentos</h3><p>Para o perdão dentro de casa, a paciência com quem você ama e a paz no lar.</p></div>
+      <div class="theme"><div class="ico" aria-hidden="true">&#128737;&#65039;</div><h3>Proteção e livramento</h3><p>Para o caminho de ida e volta, os filhos fora de casa e o que você não controla.</p></div>
+      <div class="theme"><div class="ico" aria-hidden="true">&#127808;</div><h3>Gratidão e alegria</h3><p>Para lembrar do que deu certo e agradecer mesmo antes da resposta chegar.</p></div>
+      <div class="theme"><div class="ico" aria-hidden="true">&#129496;</div><h3>Sabedoria e direção</h3><p>Para as escolhas que você não sabe fazer sozinha e os caminhos que não estão claros.</p></div>
+      <div class="theme"><div class="ico" aria-hidden="true">&#10024;</div><h3>Fé e esperança</h3><p>Para continuar confiando quando a resposta demora mais do que você esperava.</p></div>
     </div>
   </div>
 </section>
+
+<!-- ============ DIFERENCIAL ============ -->
+<section id="diferencial">
+  <div class="wrap">
+    <h2 class="diff-title">Não são versículos aleatórios copiados da internet.</h2>
+    <p class="sec-sub">São 365 cards diagramados, numerados e organizados para durar um ano inteiro
+      sem repetir nenhuma passagem — com uma estrutura simples para você seguir do dia 001 ao 365
+      sem se perder.</p>
+
+    <p class="center" style="font-weight:600;color:var(--ink-strong)">Cada card inclui:</p>
+    <div class="includes">
+      <span class="inc">Numeração do dia</span>
+      <span class="inc">Versículo curto</span>
+      <span class="inc">Referência completa</span>
+      <span class="inc">Margem de corte</span>
+      <span class="inc">Verso combinando</span>
+      <span class="inc">Tipografia legível</span>
+      <span class="inc">Formato A4 e Carta</span>
+    </div>
+
+    <blockquote class="verse-quote">
+      &ldquo;Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.&rdquo;
+      <cite>Salmos 119:105</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!--
+  ============ DEPOIMENTOS ============
+  A página modelo tem uma seção de depoimentos aqui — é o bloco que falta na sua.
+  Deixei o template pronto e COMENTADO de propósito: publicar depoimento inventado
+  é prova social falsa e infração ao CDC. Assim que tiver os primeiros compradores,
+  descomente este bloco e substitua pelos relatos reais.
+
+  <section id="depoimentos">
+    <div class="wrap">
+      <h2 class="sec-title">Relatos de quem voltou a ler a Palavra todo dia</h2>
+      <div class="themes">
+        <div class="theme">
+          <div class="ico">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+          <p>[DEPOIMENTO REAL AQUI]</p>
+          <h3 style="margin-top:.8rem;font-size:.92rem">— Nome, Cidade</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
 
 <!-- ============ OFERTA ============ -->
-<section id="ofertas">
+<section id="oferta">
   <div class="wrap">
-    <div class="sec-head" style="text-align:center;margin-inline:auto">
-      <p class="eyebrow">A oferta</p>
-      <h2>Comece hoje pelo Dia 1.</h2>
-      <p>Pagamento único. Sem assinatura, sem renovação, sem cobrança no mês seguinte.</p>
-    </div>
+    <h2 class="sec-title">Comece hoje pelo Dia 1.</h2>
+    <p class="sec-sub">Pagamento único. Sem assinatura, sem renovação, sem cobrança no mês seguinte.</p>
 
-    <div class="offer">
-      <div class="lot">
-        <p class="eyebrow">Lote promocional de lançamento do Volume III</p>
-        <div class="lot-bar"><div class="lot-fill"></div></div>
-        <p class="lot-meta"><span>417 / 500 coleções</span><span>restam 83</span></p>
-      </div>
+    <div class="offer-band">
+      <p class="lot-title">Lote promocional liberado para as primeiras <strong>500 famílias</strong>
+        que quiserem começar sua leitura hoje.</p>
+      <div class="lot-bar"><div class="lot-fill"></div></div>
+      <p class="lot-meta"><span>417/500 coleções entregues</span><span>Restam 83 acessos</span></p>
 
       <ul class="checklist">
-        <li><span><b>365 cards de leitura diária</b> — Volumes I, II e III completos</span></li>
+        <li><span><b>365 Cards de Leitura Diária</b> — Volumes I, II e III completos</span></li>
         <li><span><b>149 cards inéditos</b> do Volume III, lançados agora</span></li>
         <li><span><b>41 folhas de impressão</b> prontas, com margem de corte</span></li>
         <li><span><b>Folhas de verso</b> combinando, para impressão frente e verso</span></li>
         <li><span><b>PDF em A4 e Carta</b> — imprime em casa ou na gráfica</span></li>
-        <li class="bonus"><span><b>Bônus:</b> guia de impressão e recorte</span></li>
-        <li class="bonus"><span><b>Bônus:</b> folha de rosto para presentear, com espaço para dedicatória</span></li>
-        <li class="bonus"><span><b>Bônus:</b> acesso vitalício e todas as atualizações futuras</span></li>
+        <li><span><b>Guia de Impressão e Recorte</b> (Bônus)</span></li>
+        <li><span><b>Folha de Rosto para Presentear</b>, com espaço para dedicatória (Bônus)</span></li>
+        <li><span><b>Acesso vitalício</b> e todas as atualizações futuras (Bônus)</span></li>
       </ul>
 
-      <div class="pricing">
-        <span class="was">de <s>R$ 97</s> por apenas</span>
-        <span class="now">R$ 27</span>
-        <span class="once">pagamento único · acesso imediato</span>
+      <div class="price-block">
+        <span class="price-was">De <s>R$ 97</s> por apenas:</span>
+        <span class="price-now">R$ 27</span>
+        <span class="price-terms">Pagamento único &middot; acesso imediato</span>
       </div>
 
-      <a class="btn btn-lg" href="#" data-checkout>Quero minha coleção de 365 dias</a>
-      <p class="seals">
-        <span><i class="dot"></i>Pagamento seguro</span>
-        <span><i class="dot"></i>Produto digital</span>
-        <span><i class="dot"></i>Acesso após confirmação</span>
-      </p>
+      <div class="btn-wrap" style="margin-top:0">
+        <a class="btn" href="#" data-checkout>&#10013; QUERO MEUS 365 CARDS HOJE</a>
+      </div>
+      <p class="microcopy">Pagamento seguro &middot; Produto digital &middot; Acesso após confirmação</p>
     </div>
 
     <div class="guarantee">
-      <h3>Garantia de uma semana inteira de leitura</h3>
+      <div class="novena-icon" aria-hidden="true">&#128737;&#65039;</div>
+      <h3>Garantia incondicional de 7 dias</h3>
       <p>Baixe, imprima a primeira folha e use os nove primeiros cards — nove manhãs de verdade.
-        Se ao fim disso você sentir que o material não mudou nada na sua rotina com Deus, responda o
-        e-mail da compra e devolvemos cada centavo. Sem perguntas, sem formulário, sem justificativa.</p>
+        Se ao fim disso você sentir que este material não fortaleceu sua fé nem mudou nada na sua
+        rotina com Deus, é só pedir o reembolso. Sem perguntas. Sem burocracia.</p>
     </div>
   </div>
 </section>
@@ -512,17 +635,15 @@
 <!-- ============ FAQ ============ -->
 <section id="faq">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Perguntas frequentes</p>
-      <h2>Respostas curtas e honestas.</h2>
-    </div>
+    <h2 class="sec-title">Perguntas frequentes</h2>
+    <p class="sec-sub">Respostas curtas e honestas para você decidir com tranquilidade.</p>
 
     <div class="faq">
       <details open>
-        <summary>Vou receber os cards impressos em casa?</summary>
-        <p>Não. Luz para Cada Dia é um material digital: você recebe os arquivos em PDF por e-mail,
-          minutos depois da confirmação do pagamento, e imprime onde preferir. É justamente isso que
-          permite o preço ser este e você poder imprimir de novo sempre que quiser.</p>
+        <summary>Os cards são físicos ou digitais?</summary>
+        <p>Digitais. Você recebe os arquivos em PDF por e-mail, minutos depois da confirmação do
+          pagamento, e imprime onde preferir. É justamente isso que permite o preço ser este e você
+          poder imprimir de novo sempre que quiser.</p>
       </details>
       <details>
         <summary>Preciso ter impressora em casa?</summary>
@@ -564,27 +685,16 @@
           revender o arquivo ou distribuí-lo publicamente como material próprio.</p>
       </details>
       <details>
-        <summary>E se eu não gostar?</summary>
-        <p>Você tem 7 dias para pedir o reembolso integral respondendo o e-mail da compra. Não pedimos
-          justificativa e não há formulário para preencher.</p>
+        <summary>Ainda estou em dúvida se é para mim. Como saber?</summary>
+        <p>Se você já tentou manter uma leitura diária e parou no meio, este material foi feito
+          exatamente para o seu caso: ele tira de você a decisão do que ler. E se mesmo assim não
+          funcionar, você tem 7 dias para pedir o dinheiro de volta.</p>
       </details>
     </div>
-  </div>
-</section>
 
-<!-- ============ FECHAMENTO ============ -->
-<section id="fechamento">
-  <div class="wrap close sheet">
-    <p class="eyebrow">365 dias · um card por manhã</p>
-    <h2>Amanhã cedo, o versículo já vai estar escolhido.</h2>
-    <p>Você não precisa de mais força de vontade. Precisa de um material que já esteja pronto
-      quando o dia começar.</p>
-    <a class="btn btn-lg" href="#" data-checkout>Quero minha coleção de 365 dias</a>
-    <p class="seals">
-      <span><i class="dot"></i>R$ 27 à vista</span>
-      <span><i class="dot"></i>Acesso imediato</span>
-      <span><i class="dot"></i>7 dias de garantia</span>
-    </p>
+    <div class="btn-wrap">
+      <a class="btn" href="#oferta" data-checkout>&#10013; QUERO MEUS 365 CARDS</a>
+    </div>
   </div>
 </section>
 
@@ -592,32 +702,52 @@
 
 <footer>
   <div class="wrap">
-    <div class="foot-in">
-      <span>Luz para Cada Dia · cards de leitura diária</span>
-      <span>Material digital · pagamento único · 7 dias de garantia</span>
+    <div class="foot-top">
+      <span><strong>Luz para Cada Dia</strong> &middot; cards de leitura diária</span>
+      <span>Material digital &middot; pagamento único &middot; 7 dias de garantia</span>
     </div>
     <p class="legal">
-      <strong>Aviso legal — direitos autorais.</strong> Todo o conteúdo deste material (textos, diagramação,
-      seleção de versículos e conceito visual) é protegido por direitos autorais. A reprodução, revenda ou
-      compartilhamento do arquivo sem autorização constitui violação da Lei nº 9.610/98.
-      Este site não é afiliado à Meta Platforms, Inc.
-      &copy; 2026 — Todos os direitos reservados.
+      <strong>&#9888; Aviso legal — direitos autorais.</strong>
+      Todo o conteúdo deste material (textos, diagramação, seleção de versículos, estrutura e conceito
+      visual) é protegido por direitos autorais. A reprodução, revenda ou compartilhamento sem
+      autorização constitui violação da Lei nº 9.610/98. Este é um trabalho autoral, feito com fé e
+      zelo. Respeite. Valorize.<br><br>
+      Este site não é afiliado à Meta Platforms, Inc. &copy; 2026 — Todos os direitos reservados.
     </p>
   </div>
 </footer>
 
+<!-- barra fixa de urgência (aparece ao rolar) -->
+<div class="mini-urgency" id="urgency">
+  <span>Restam <strong>83 acessos</strong> por <strong>R$ 27</strong></span>
+  <a href="#" data-checkout>Garantir agora</a>
+</div>
+
 <script>
 (function () {
   var rail = document.getElementById('rail');
-  if (!rail) return;
-  var step = function () {
-    var card = rail.querySelector('.card');
-    return card ? card.offsetWidth + 18 : 260;
-  };
-  var next = document.getElementById('next');
-  var prev = document.getElementById('prev');
-  if (next) next.addEventListener('click', function () { rail.scrollBy({ left: step(), behavior: 'smooth' }); });
-  if (prev) prev.addEventListener('click', function () { rail.scrollBy({ left: -step(), behavior: 'smooth' }); });
+  if (rail) {
+    var step = function () {
+      var c = rail.querySelector('.vcard');
+      return c ? c.offsetWidth + 16 : 240;
+    };
+    var n = document.getElementById('next'), p = document.getElementById('prev');
+    if (n) n.addEventListener('click', function () { rail.scrollBy({ left: step(), behavior: 'smooth' }); });
+    if (p) p.addEventListener('click', function () { rail.scrollBy({ left: -step(), behavior: 'smooth' }); });
+  }
+
+  var bar = document.getElementById('urgency');
+  var offer = document.getElementById('oferta');
+  if (bar && offer) {
+    var onScroll = function () {
+      var passedHero = window.scrollY > window.innerHeight * 0.9;
+      var atOffer = offer.getBoundingClientRect().top < window.innerHeight
+                 && offer.getBoundingClientRect().bottom > 0;
+      bar.classList.toggle('show', passedHero && !atOffer);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 })();
 </script>
 
