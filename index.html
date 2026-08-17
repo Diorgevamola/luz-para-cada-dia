@@ -103,37 +103,50 @@
   .hero h1{max-width:22ch;margin-inline:auto}
   .hero .sub{max-width:62ch;margin:1.1rem auto 0;color:var(--ink-mid);font-size:1.08rem}
 
-  /* mockup do produto */
-  .mockup{margin:2.2rem auto 0;max-width:640px;position:relative;padding-bottom:1.5rem}
-  .mock-sheet{
-    background:#fff;border-radius:14px;padding:1.3rem;
-    box-shadow:0 24px 60px rgba(70,45,16,.16);
-    transform:rotate(-1.4deg);
+  /* mockup do produto — folha real */
+  .mockup{margin:2.4rem auto .5rem;max-width:560px;position:relative}
+  .sheet-img{
+    width:100%;border-radius:10px;
+    box-shadow:0 26px 64px rgba(70,45,16,.20);
+    border:1px solid #EFE6D4;background:#fff;
   }
-  .mock-head{display:flex;justify-content:space-between;font-size:.62rem;
-    letter-spacing:.14em;text-transform:uppercase;color:#A99B86;
-    padding-bottom:.7rem;border-bottom:1px solid #EDE6D8;margin-bottom:.9rem}
-  .grid9{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
-  .mini{
-    border:1px solid #EDE6D8;border-radius:6px;padding:.8rem .55rem;
-    min-height:96px;display:flex;flex-direction:column;justify-content:center;
-    text-align:center;background:linear-gradient(180deg,#FFFDF8,#FFF9EC);
+  .mockup .sheet-img{transform:rotate(-1.2deg)}
+  .mock-badge{
+    position:absolute;right:-10px;bottom:-14px;
+    background:var(--ink-strong);color:var(--cream);
+    border-radius:10px;padding:.7rem 1rem;text-align:center;
+    box-shadow:0 16px 34px rgba(36,27,18,.3);transform:rotate(3deg);
+    font-size:.72rem;line-height:1.3;letter-spacing:.02em;
   }
-  .mini b{font-size:.55rem;color:var(--gold);letter-spacing:.1em;font-weight:700;
-    font-variant-numeric:tabular-nums}
-  .mini q{font-family:var(--serif);font-size:.8rem;line-height:1.28;quotes:none;
-    display:block;margin:.35rem 0;color:var(--ink-strong)}
-  .mini i{font-style:normal;font-size:.55rem;color:#9C9081}
-  .mock-float{
-    position:absolute;right:-8px;bottom:0;width:132px;
-    background:#fff;border-radius:10px;padding:1rem .8rem;text-align:center;
-    box-shadow:0 18px 40px rgba(70,45,16,.22);transform:rotate(5deg);
-    border:1px solid #F0E8D8;
+  .mock-badge b{display:block;font-family:var(--serif);font-size:1.5rem;
+    color:#fff;line-height:1;margin-bottom:.15rem}
+  .img-caption{text-align:center;font-size:.82rem;color:var(--ink-soft);
+    margin-top:1.1rem;font-style:italic}
+
+  /* galeria de folhas */
+  .sheets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem}
+  .sheet-fig{margin:0;display:flex;flex-direction:column;gap:.7rem}
+  .sheet-fig figcaption{font-size:.8rem;color:var(--ink-soft);text-align:center}
+  .sheet-fig .sheet-img{transition:transform .3s ease,box-shadow .3s ease}
+  .sheet-fig:hover .sheet-img{transform:translateY(-6px);
+    box-shadow:0 30px 60px rgba(70,45,16,.22)}
+
+  /* frente e verso */
+  .flip{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;
+    max-width:640px;margin:0 auto}
+  .flip .sheet-fig:first-child .sheet-img{transform:rotate(-2deg)}
+  .flip .sheet-fig:last-child .sheet-img{transform:rotate(2deg)}
+
+  /* mosaico antes da oferta */
+  .stack{display:flex;justify-content:center;align-items:center;gap:0;
+    max-width:620px;margin:0 auto 2.4rem;padding-block:1rem}
+  .stack img{
+    width:31%;border-radius:8px;border:1px solid #EFE6D4;background:#fff;
+    box-shadow:0 18px 40px rgba(70,45,16,.18);
   }
-  .mock-float b{font-size:.55rem;color:var(--gold);letter-spacing:.1em}
-  .mock-float q{font-family:var(--serif);font-size:.9rem;line-height:1.25;quotes:none;
-    display:block;margin:.4rem 0 .3rem;color:var(--ink-strong)}
-  .mock-float i{font-style:normal;font-size:.55rem;color:#9C9081}
+  .stack img:nth-child(1){transform:rotate(-6deg) translateX(14%);z-index:1}
+  .stack img:nth-child(2){transform:scale(1.1);z-index:3;position:relative}
+  .stack img:nth-child(3){transform:rotate(6deg) translateX(-14%);z-index:2}
 
   /* ---------- cadeia de diagnóstico ---------- */
   .path-intro{font-family:var(--serif);font-size:clamp(1.5rem,3.4vw,2.5rem);
@@ -173,22 +186,17 @@
   .benefit p{font-size:.94rem;color:var(--ink-soft)}
 
   /* ---------- carrossel ---------- */
-  .rail{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  .rail{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;
     padding:.6rem .2rem 1.4rem;scrollbar-width:thin;scrollbar-color:#E0D5BF transparent}
-  .vcard{
-    flex:0 0 clamp(212px,24vw,244px);scroll-snap-align:center;aspect-ratio:5/7;
-    background:#fff;border-radius:14px;border:1px solid #F0E8D8;
-    padding:1.4rem 1.1rem;display:flex;flex-direction:column;
-    align-items:center;justify-content:center;text-align:center;gap:.7rem;
-    box-shadow:0 12px 30px rgba(70,45,16,.1);
-    transition:transform .3s ease,box-shadow .3s ease;
+  .vsheet{
+    flex:0 0 clamp(230px,26vw,290px);scroll-snap-align:center;margin:0;
+    display:flex;flex-direction:column;gap:.7rem;
   }
-  .vcard:hover{transform:translateY(-6px);box-shadow:0 20px 42px rgba(70,45,16,.16)}
-  .vcard .id{font-size:.62rem;letter-spacing:.16em;color:var(--gold);font-weight:700;
-    font-variant-numeric:tabular-nums}
-  .vcard .fl{width:32px;height:1px;background:#E8DCC4}
-  .vcard q{font-family:var(--serif);font-size:1.16rem;line-height:1.32;quotes:none;color:var(--ink-strong)}
-  .vcard .ref{font-size:.72rem;letter-spacing:.05em;color:#9C9081;text-transform:uppercase}
+  .vsheet .sheet-img{transition:transform .3s ease,box-shadow .3s ease}
+  .vsheet:hover .sheet-img{transform:translateY(-6px);
+    box-shadow:0 26px 52px rgba(70,45,16,.2)}
+  .vsheet figcaption{font-size:.78rem;color:var(--ink-soft);text-align:center;
+    letter-spacing:.04em}
   .car-nav{display:flex;gap:.5rem;justify-content:center;margin-top:.2rem}
   .arrow{width:44px;height:44px;border:1px solid #EADFC8;background:#fff;color:var(--ink-strong);
     border-radius:50%;cursor:pointer;font-size:1.05rem;display:grid;place-items:center;
@@ -309,7 +317,6 @@
     .path-row{gap:.75rem}
     .novena-icon{width:52px;height:52px;font-size:22px}
     .path-arrow{padding-left:66px}
-    .mock-float{width:108px;right:-4px}
   }
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
@@ -336,26 +343,11 @@
       cumprir e sem culpa por ter atrasado.</p>
 
     <div class="mockup">
-      <div class="mock-sheet">
-        <div class="mock-head"><span>Luz para Cada Dia</span><span>Folha 01 &middot; frentes</span></div>
-        <div class="grid9">
-          <div class="mini"><b>001</b><q>O Senhor é a minha luz e a minha salvação.</q><i>Salmos 27:1</i></div>
-          <div class="mini"><b>002</b><q>Posso todas as coisas naquele que me fortalece.</q><i>Filipenses 4:13</i></div>
-          <div class="mini"><b>003</b><q>O Senhor é o meu pastor; de nada terei falta.</q><i>Salmos 23:1</i></div>
-          <div class="mini"><b>004</b><q>Não andem ansiosos por coisa alguma.</q><i>Filipenses 4:6</i></div>
-          <div class="mini"><b>005</b><q>Deem graças em todas as circunstâncias.</q><i>1 Tess. 5:18</i></div>
-          <div class="mini"><b>006</b><q>Confie no Senhor de todo o seu coração.</q><i>Provérbios 3:5</i></div>
-          <div class="mini"><b>007</b><q>Busquem em primeiro lugar o reino de Deus.</q><i>Mateus 6:33</i></div>
-          <div class="mini"><b>008</b><q>Seja forte e corajoso. Não tenha medo.</q><i>Josué 1:9</i></div>
-          <div class="mini"><b>009</b><q>Provem e vejam como o Senhor é bom.</q><i>Salmos 34:8</i></div>
-        </div>
-      </div>
-      <div class="mock-float">
-        <b>052</b>
-        <q>Os que esperam no Senhor renovarão as forças.</q>
-        <i>Isaías 40:31</i>
-      </div>
+      <img class="sheet-img" src="img/folha-01.jpg" width="1055" height="1491" fetchpriority="high"
+           alt="Folha 01 da coleção Luz para Cada Dia, com nove cards ilustrados de versículos prontos para recortar">
+      <div class="mock-badge"><b>365</b>cards</div>
     </div>
+    <p class="img-caption">Folha 01 — nove cards por página, já ilustrados e com marcas de corte.</p>
 
     <div class="btn-wrap">
       <a class="btn" href="#oferta" data-checkout>&#10013; QUERO MEUS 365 CARDS</a>
@@ -468,26 +460,68 @@
     <p class="sec-sub">São 365 cards para imprimir, recortar e usar um a cada dia do ano.
       Arraste para o lado.</p>
 
-    <div class="rail" id="rail" tabindex="0" role="group" aria-label="Carrossel de cards">
-      <article class="vcard"><span class="id">001</span><span class="fl"></span><q>O Senhor é a minha luz e a minha salvação.</q><span class="ref">Salmos 27:1</span></article>
-      <article class="vcard"><span class="id">013</span><span class="fl"></span><q>O Senhor pelejará por vós.</q><span class="ref">Êxodo 14:14</span></article>
-      <article class="vcard"><span class="id">052</span><span class="fl"></span><q>Os que esperam no Senhor renovarão as forças.</q><span class="ref">Isaías 40:31</span></article>
-      <article class="vcard"><span class="id">075</span><span class="fl"></span><q>Em paz me deitarei e dormirei.</q><span class="ref">Salmos 4:8</span></article>
-      <article class="vcard"><span class="id">116</span><span class="fl"></span><q>Eu sou a luz do mundo.</q><span class="ref">João 8:12</span></article>
-      <article class="vcard"><span class="id">118</span><span class="fl"></span><q>Todas as coisas cooperam para o bem.</q><span class="ref">Romanos 8:28</span></article>
-      <article class="vcard"><span class="id">157</span><span class="fl"></span><q>Aquietai-vos e sabei que eu sou Deus.</q><span class="ref">Salmos 46:10</span></article>
-      <article class="vcard"><span class="id">203</span><span class="fl"></span><q>Deus é amor.</q><span class="ref">1 João 4:8</span></article>
-      <article class="vcard"><span class="id">209</span><span class="fl"></span><q>Tu és o meu esconderijo.</q><span class="ref">Salmos 32:7</span></article>
-      <article class="vcard"><span class="id">221</span><span class="fl"></span><q>A vereda dos justos é como a luz da aurora.</q><span class="ref">Provérbios 4:18</span></article>
+    <div class="rail" id="rail" tabindex="0" role="group" aria-label="Carrossel de folhas da coleção">
+      <figure class="vsheet">
+        <img class="sheet-img" src="img/folha-01.jpg" width="1055" height="1491" loading="lazy"
+             alt="Folha 01 do Volume I com os cards 001 a 008 e o card de instruções">
+        <figcaption>Volume I &middot; Folha 01</figcaption>
+      </figure>
+      <figure class="vsheet">
+        <img class="sheet-img" src="img/folha-06.jpg" width="1055" height="1491" loading="lazy"
+             alt="Folha 06 do Volume I com cards de bênção e confiança">
+        <figcaption>Volume I &middot; Folha 06</figcaption>
+      </figure>
+      <figure class="vsheet">
+        <img class="sheet-img" src="img/folha-09.jpg" width="1055" height="1491" loading="lazy"
+             alt="Folha 09 do Volume I com cards sobre descanso e paz">
+        <figcaption>Volume I &middot; Folha 09</figcaption>
+      </figure>
+      <figure class="vsheet">
+        <img class="sheet-img" src="img/v2-folha-01.jpg" width="1055" height="1491" loading="lazy"
+             alt="Folha 01 do Volume II com ilustrações em terracota">
+        <figcaption>Volume II &middot; Folha 01</figcaption>
+      </figure>
+      <figure class="vsheet">
+        <img class="sheet-img" src="img/v2-folha-06.jpg" width="1055" height="1491" loading="lazy"
+             alt="Folha 06 do Volume II com cards sobre esperança e humildade">
+        <figcaption>Volume II &middot; Folha 06</figcaption>
+      </figure>
+      <figure class="vsheet">
+        <img class="sheet-img" src="img/v2-folha-12.jpg" width="1055" height="1491" loading="lazy"
+             alt="Folha 12 do Volume II com os cards finais, de 099 a 107">
+        <figcaption>Volume II &middot; Folha 12</figcaption>
+      </figure>
     </div>
 
     <div class="car-nav">
-      <button class="arrow" id="prev" type="button" aria-label="Card anterior">&#8592;</button>
-      <button class="arrow" id="next" type="button" aria-label="Próximo card">&#8594;</button>
+      <button class="arrow" id="prev" type="button" aria-label="Folha anterior">&#8592;</button>
+      <button class="arrow" id="next" type="button" aria-label="Próxima folha">&#8594;</button>
     </div>
 
     <div class="btn-wrap">
       <a class="btn" href="#oferta" data-checkout>&#10013; QUERO TER ACESSO AOS CARDS</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRENTE E VERSO ============ -->
+<section id="frente-verso">
+  <div class="wrap">
+    <h2 class="sec-title">Frente e verso, como um card de verdade</h2>
+    <p class="sec-sub">Cada folha de versículos tem uma folha de verso combinando. Você imprime dos dois
+      lados e o card fica acabado — com cara de produto comprado pronto, não de papel impresso em casa.</p>
+
+    <div class="flip">
+      <figure class="sheet-fig">
+        <img class="sheet-img" src="img/folha-06.jpg" width="1055" height="1491" loading="lazy"
+             alt="Frente da folha, com nove cards de versículos ilustrados">
+        <figcaption>A frente &mdash; nove versículos ilustrados</figcaption>
+      </figure>
+      <figure class="sheet-fig">
+        <img class="sheet-img" src="img/verso-v1.jpg" width="1055" height="1491" loading="lazy"
+             alt="Verso da folha, com o ramo de oliveira e a marca Luz para Cada Dia">
+        <figcaption>O verso &mdash; ramo de oliveira e a marca</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -544,9 +578,8 @@
 <section id="diferencial">
   <div class="wrap">
     <h2 class="diff-title">Não são versículos aleatórios copiados da internet.</h2>
-    <p class="sec-sub">São 365 cards diagramados, numerados e organizados para durar um ano inteiro
-      sem repetir nenhuma passagem — com uma estrutura simples para você seguir do dia 001 ao 365
-      sem se perder.</p>
+    <p class="sec-sub">São 365 cards ilustrados um a um, diagramados e numerados para durar o ano inteiro — com uma
+      estrutura simples para você seguir do dia 001 ao 365 sem se perder.</p>
 
     <p class="center" style="font-weight:600;color:var(--ink-strong)">Cada card inclui:</p>
     <div class="includes">
@@ -593,6 +626,12 @@
     <h2 class="sec-title">Comece hoje pelo Dia 1.</h2>
     <p class="sec-sub">Pagamento único. Sem assinatura, sem renovação, sem cobrança no mês seguinte.</p>
 
+    <div class="stack" aria-label="As folhas que compõem a coleção completa">
+      <img src="img/v2-folha-06.jpg" width="1055" height="1491" loading="lazy" alt="Folha do Volume II">
+      <img src="img/folha-01.jpg" width="1055" height="1491" loading="lazy" alt="Folha do Volume I">
+      <img src="img/v2-folha-12.jpg" width="1055" height="1491" loading="lazy" alt="Outra folha do Volume II">
+    </div>
+
     <div class="offer-band">
       <p class="lot-title">Lote promocional liberado para as primeiras <strong>500 famílias</strong>
         que quiserem começar sua leitura hoje.</p>
@@ -601,7 +640,7 @@
 
       <ul class="checklist">
         <li><span><b>365 Cards de Leitura Diária</b> — Volumes I, II e III completos</span></li>
-        <li><span><b>149 cards inéditos</b> do Volume III, lançados agora</span></li>
+        <li><span><b>Volume III inédito</b>, lançado agora</span></li>
         <li><span><b>41 folhas de impressão</b> prontas, com margem de corte</span></li>
         <li><span><b>Folhas de verso</b> combinando, para impressão frente e verso</span></li>
         <li><span><b>PDF em A4 e Carta</b> — imprime em casa ou na gráfica</span></li>
@@ -657,14 +696,15 @@
           atravessar. Em papel comum de 75 g também funciona: fica mais leve, mas continua legível e bonito.</p>
       </details>
       <details>
-        <summary>Os versículos se repetem entre os volumes?</summary>
-        <p>Não. Os três volumes foram montados justamente para completar 365 dias sem repetição:
-          108 cards no Volume I, 108 no Volume II e 149 no Volume III. Cada dia do ano tem o seu.</p>
+        <summary>Quantos cards tem cada volume?</summary>
+        <p>Os três volumes juntos completam 365 cards: 98 no Volume I, 107 no Volume II e o Volume III
+          fechando o ano. Alguns versículos muito queridos aparecem em mais de um volume, com
+          ilustração e diagramação próprias de cada edição.</p>
       </details>
       <details>
         <summary>Já tenho o Volume I ou o II. Vale a pena?</summary>
         <p>Vale, e é a forma mais barata de completar. A coleção sai pelo mesmo preço com os três
-          volumes juntos — na prática você paga pelo Volume III inédito e leva os outros dois de novo,
+          volumes juntos — na prática você paga pelo Volume III inédito e leva os outros dois junto,
           já organizados na numeração contínua de 001 a 365.</p>
       </details>
       <details>
